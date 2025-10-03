@@ -1,5 +1,17 @@
-import 'package:penjualan_mobil/penjualan_mobil.dart' as penjualan_mobil;
+class Mobil {
+  String merk;
+  int tahun;
 
-void main(List<String> arguments) {
-  print('Hello world: ${penjualan_mobil.calculate()}!');
+  Mobil(this.merk, this.tahun);
+
+  void info() {
+    print('Mobil: $merk,Tahun: $tahun');
+  }
+}
+void main (){
+var avanza = Mobil ('Toyota',2020);
+avanza.info(); // Mobil: Toyota, Tahun: 2020
+ 
+ var jeep = Mobil ('Sport',2001);
+ jeep.info(); 
 }
